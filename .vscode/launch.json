@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "gdb",
+            "request": "attach",
+            // "preLaunchTask": "run gdb server",
+            "executable": "${workspaceRoot}/kernel/kernel",
+            "target": "127.0.0.1:26000",
+            "remote": true,
+            "cwd": "${workspaceRoot}", 
+            "gdbpath": "riscv64-unknown-elf-gdb"
+            // "autorun": [
+            //         "any gdb commands to initiate your environment, if it is needed"
+            //     ]
+        }
+    ]
+}
